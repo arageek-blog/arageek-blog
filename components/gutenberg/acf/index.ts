@@ -1,0 +1,33 @@
+import dynamic from 'next/dynamic';
+
+export const acfBlocks = {
+  'acf/patterned-title': dynamic(() => import('./PatternedTitle')),
+  'acf/section-title': dynamic(() => import('./SectionTitle')),
+  'acf/authors-archive': dynamic(() => import('./AuthorsArchive')),
+  'acf/selective-users': dynamic(() => import('./SelectiveUsers')),
+  'acf/single-image': dynamic(() => import('./SingleImage')),
+  'acf/text-with-see-more': dynamic(() => import('./SeeMoreContent')),
+  // 'acf/posts-selector': dynamic(() => import('./DefaultBlock')),
+  'acf/movies-list': dynamic(() => import('./MoviesList')),
+  'acf/pages-selector': dynamic(() => import('./PagesSelector')),
+  'acf/custom-cards': dynamic(() => import('./CustomCards')),
+  // 'acf/posts-group-1': dynamic(() => import('./DefaultBlock')),
+  'acf/swiper-cards': dynamic(() => import('./SwiperCards')),
+  'acf/video-cards': dynamic(() => import('./VideoCards')),
+  // 'acf/symmetrical-cards': dynamic(() => import('./DefaultBlock')),
+  'acf/basic-cards': dynamic(() => import('./BasicCards')),
+  'acf/bio-cards': dynamic(() => import('./BioCards')),
+  // 'acf/half-gray': dynamic(() => import('./DefaultBlock')),
+  'acf/wide-cards': dynamic(() => import('./WideCards')),
+  'acf/homepage-hero': dynamic(() => import('./HomepageHero')),
+  'acf/custom-ad': dynamic(() => import('./CustomAd')),
+  'acf/wiki-box': dynamic(() => import('./WikiBox')),
+  'acf/full-cards': dynamic(() => import('./FullCards')),
+  'acf/arageek-bio-hero': dynamic(() => import('./BioHero')),
+  'acf/arageek-bio-grid': dynamic(() => import('./BioGrid')),
+  'acf/arageek-bio-person-of-day': dynamic(() => import('./BioPersonOfDay')),
+  'acf/arageek-bio-born-today': dynamic(() => import('./BioBornToday')),
+  'acf/arageek-bio-zodiac': dynamic(() => import('./BioZodiac')),
+  'acf/arageek-movies-info': dynamic(() => import('./MovieCard')),
+  'acf/arageek-buzzfeed': dynamic(() => import('./BuzzFeed'))
+};
